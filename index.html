@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="player">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        游戏公告
+    </title>
+    <meta name="keywords" content="游戏公告">
+    <meta name="description" content="游戏公告" />
+    <!-- <link href="/Static/favicon.ico" rel="shortcut icon" type="image/x-icon"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <meta content="always" name="referrer">
+</head>
+
+<body style="">
+  <div class="page-home" data-mark="page">
+    <!-- 轮播图部分 -->
+    <div class="swiper">
+      <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <!-- 内容 -->
+          <!-- <div class="swiper-slide">
+            <a href="/notice1.html">
+              <img src="../src/images/huodong.png" alt="">
+            </a>
+        </div> -->
+      </div>
+      </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 活动列表部分 -->
+    <div class="content">
+      <!-- tab -->
+      <div class="tab" id="tab">
+        <ul>
+          <li data-act="tab" data-value="huodong" class="actived">活动</li>
+          <li data-act="tab" data-value="weihu">维护</li>
+          <li data-act="tab" data-value="gengxin">更新</li>
+          <li data-act="tab" data-value="guzhang">故障</li>
+        </ul>
+        <div class="hr"></div>
+        <!-- <div class="hr" style="background-color: #eee"></div> -->
+      </div>
+      <div class="tab" style="display: none"></div>
+      <!-- 公告 -->
+      <div class="notice" data-mark="notice">
+        <!-- 公告一 -->
+        <div class="list">
+          <!-- 公告缩略图 -->
+          <img class="pic" src="../src/images/huodong1.png" alt="">
+          <!-- 公告内容 -->
+          <span>一周年纪念，登陆奖励活动开始！</span>
+          <i>2016/08/30 13:00</i>
+        </div>
+        <!-- 公告二 -->
+        <div class="list">
+          <img class="pic" src="../src/images/huodong1.png" alt="">
+          <span>一周年纪念，登陆奖励活动开始！</span>
+          <i><img src="../src/images/new.png" alt="">2016/08/30 13:00</i>
+        </div>
+
+        <div class="pagination">
+          <button data-act="pagination" class="btn-up" data-value="up">上一页</button>
+          <div data-act="pagination" class="btn-down" data-value="down">下一页</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
