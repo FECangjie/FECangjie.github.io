@@ -10,8 +10,6 @@
  const path = require('path')
  const fs = require('fs')
  const getAllArticle = require('./getAllArticle')
- var chokidar = require('chokidar');
-
  const ARTILE_PATH = path.join(__dirname,'../article')
  const WRITE_FILE_PATH = path.join(__dirname,'../src/data','article.js')
  var chokidar = require('chokidar');
