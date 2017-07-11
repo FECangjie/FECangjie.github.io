@@ -17,6 +17,7 @@
     "entry": "index.js",
     "dist": "./dist",
     "openBrowser": false,
+    "deps": "./",
     "devConfig": "./webpack/config.dev.js",
     "prodConfig": "./webpack/config.prod.js",
     "favico": ""

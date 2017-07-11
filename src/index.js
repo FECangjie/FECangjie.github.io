@@ -18,6 +18,7 @@ import './styles/common.styl'
 import zola from 'zola'
 import routes from './routes'
 
+console.log(MY_ARTICLE_DATA)
 zola
   .set('env', process.env.NODE_ENV)
   .render(routes, '#root')
