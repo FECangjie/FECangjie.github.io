@@ -1,10 +1,11 @@
-
-
-
+/**
+ * 移动文件
+ * @type {[type]}
+ */
 const fs = require('fs')
 const path = require('path')
 
-const resource_path = '/Users/dong/develop/link/link/lib'
+const resource_path = '/Users/cangjie/link/link/lib' // 资源路径
 const destPath = path.join(__dirname,'../article')
 const dirs = fs.readdirSync(resource_path)
 
