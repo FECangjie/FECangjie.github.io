@@ -1,0 +1,139 @@
+.site-nav {
+  padding: 50px 50px 50px 100px;
+  box-sizing: content-box;
+  background-color: #fff;
+  width: 200px;
+}
+.site-nav .container {
+  background-color: #fff;
+}
+.lt-ie9 .site-nav {
+  float: left;
+  position: relative;
+  margin-bottom: 30px;
+}
+.lt-ie9 .site-nav-inner {
+  height: 100% !important;
+}
+.lt-ie9 .site-main {
+  float: left;
+  width: 80%;
+  margin-left: -200px;
+}
+.lt-ie9 .site-main-inner {
+  margin-left: 240px;
+}
+@media (min-width: 1200px) {
+  .site-nav {
+    float: left;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .site-nav-inner {
+    height: 100% !important;
+  }
+  .site-main {
+    float: left;
+    width: 80%;
+    margin-left: -200px;
+  }
+  .site-main-inner {
+    margin-left: 240px;
+    padding-top: 50px;
+  }
+}
+@media (max-width: 1199px) {
+  .site-nav {
+    position: fixed;
+    top: 0;
+  }
+  .show-nav .site-nav {
+    position: absolute;
+  }
+  .admin-bar .site-nav {
+    top: 28px;
+  }
+  .site-main {
+    background: #ffffff;
+    position: relative;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .site-nav {
+    left: 40px;
+  }
+  .site-nav-inner {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .site-main {
+    padding: 80px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .site-nav-inner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .site-main {
+    padding-top: 60px;
+  }
+}
+.site-info {
+  border-top: 5px solid #333333;
+  float: left;
+  width: 100%;
+  padding: 20px 0 40px;
+  position: relative;
+}
+.lt-ie9 .site-actions {
+  /*position: absolute;*/
+  top: -1px;
+  left: 0;
+}
+.lt-ie9 .admin-bar .site-actions {
+  top: 26px;
+}
+@media (min-width: 768px) {
+  .site-actions {
+    /*position: absolute;*/
+    top: -1px;
+    left: 0;
+  }
+  .admin-bar .site-actions {
+    top: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .site-actions {
+    width: 100%;
+  }
+}
+
+
+.site-title {
+  margin-top: 0;
+}
+.site-title a {
+  display: block;
+  font-size: 30px;
+}
+.site-title.display-logo img {
+  max-width: 100%;
+}
+.site-title.display-logo a {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  padding-bottom: 20px;
+}
+.site-description {
+  font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #aaaaaa;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 12.5px 0 0;
+}

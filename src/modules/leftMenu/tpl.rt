@@ -1,0 +1,54 @@
+<div id="navigation" class="site-nav" style="display: block;">
+	<div class="site-nav-inner">
+		<div class="container">
+			<header id="masthead" class="site-header" role="banner">
+				<h1 class="site-title display-logo"><a href="#" title="DW Minion" rel="home"><img alt="DW Minion" src="../../resources/images/face.png"></a></h1>
+				<p class="site-subtitle">仓颉的早年生涯</p>
+				<h2 class="site-description">hi
+						</h2> </header>
+			<div id="main-sidebar" class="widget-area" role="complementary">
+				<aside id="nav_menu-2" class="widget widget_nav_menu">
+					<div class="menu-main-menu-container">
+						<ul id="menu-main-menu" class="menu">
+							<li id="menu-item-113" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-113"><a href="http://demo.designwall.com/dw-minion/">首页</a></li>
+							<li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="http://demo.designwall.com/dw-minion/about-me/">关于</a></li>
+							<li id="menu-item-114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-114"><a href="#">文章</a>
+								<ul class="sub-menu">
+									<li id="menu-item-191" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-191"><a href="http://demo.designwall.com/dw-minion/2013/06/20/the-inside-secrets-of-millionaires-under-the-age-of-29/">前端</a></li>
+									<li id="menu-item-192" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-192"><a href="http://demo.designwall.com/dw-minion/2013/06/16/responsive-wordpress-themes/">音乐</a></li>
+								</ul>
+							</li>
+							<li id="menu-item-112" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-112"><a href="http://demo.designwall.com/dw-minion/contact/">归档</a></li>
+						</ul>
+					</div>
+				</aside>
+				<!-- <aside id="categories-2" class="widget widget_categories">
+					<h3 class="widget-title">Categories</h3>
+					<ul>
+						<li class="cat-item cat-item-2"><a href="http://demo.designwall.com/dw-minion/category/creativity/" title="Quisque tincidunt metus aliquam orci tincidunt, ac sollicitudin massa lacinia. Nunc ligula enim, fringilla vitae neque vestibulum, fermentum semper tellus. Fusce magna nisi, tincidunt eu dui quis, tempus consequat ipsum. ">Creativity</a>
+						</li>
+						<li class="cat-item cat-item-3"><a href="http://demo.designwall.com/dw-minion/category/delicious/" title="Etiam sodales luctus est at consequat. Aliquam lacinia odio nec eros cursus laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse sagittis massa a mi tempus, nec euismod lacus tristique.">Delicious</a>
+						</li>
+						<li class="cat-item cat-item-4"><a href="http://demo.designwall.com/dw-minion/category/freelancing/" title="Pellentesque eu mollis lectus. Integer tristique quis eros ut porttitor. Aliquam gravida, dolor volutpat venenatis lobortis, diam dolor varius lorem, ut rutrum metus nibh at risus. Sed ac tortor ac velit pharetra tristique eget at risus. ">Freelancing</a>
+						</li>
+						<li class="cat-item cat-item-5"><a href="http://demo.designwall.com/dw-minion/category/journal/" title="Aliquam et tempus erat. Morbi convallis consequat interdum. Mauris sed gravida enim, vitae tincidunt neque. Nulla a nulla ullamcorper, sollicitudin sapien vel, egestas tellus. Mauris eu suscipit enim. Nulla at pellentesque velit, vel consectetur lacus. ">Journal</a>
+						</li>
+						<li class="cat-item cat-item-6"><a href="http://demo.designwall.com/dw-minion/category/photography/" title="Nullam dictum viverra metus vel mollis. Morbi ac ultrices massa. Nunc ultricies mattis lectus, a faucibus libero volutpat sit amet. Duis eget egestas lacus, in aliquet nibh. Donec elementum, augue non tincidunt facilisis.">Photography</a>
+						</li>
+						<li class="cat-item cat-item-7"><a href="http://demo.designwall.com/dw-minion/category/travel/" title="Maecenas hendrerit nisl ac justo scelerisque pretium. Vivamus at ultrices lorem, non imperdiet nulla. Sed gravida nisl commodo neque imperdiet pellentesque. Nam pretium viverra odio, in sollicitudin ipsum cursus.">Travel</a>
+						</li>
+					</ul>
+				</aside> -->
+				<aside id="meta-2" class="widget widget_meta">
+					<h3 class="widget-title">标签</h3>
+					<ul>
+						<li><a href="http://demo.designwall.com/dw-minion/wp-login.php">javascript</a></li>
+						<li><a href="http://demo.designwall.com/dw-minion/feed/">钢琴</a></li>
+						<li><a href="http://demo.designwall.com/dw-minion/comments/feed/">电子音乐</a></li>
+						<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">css</a></li>
+					</ul>
+				</aside>
+			</div>
+		</div>
+	</div>
+</div>
