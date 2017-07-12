@@ -5,13 +5,11 @@
  */
 
 import { React, Page } from 'zola'
+import Tpl from './tpl.rt'
+import './style.less'
 
 export default class Index extends Page {
   render () {
-    return (
-      <div>
-        <a href="#list">列表页面</a>
-      </div>
-    )
+    return Tpl.apply(this)
   }
 }

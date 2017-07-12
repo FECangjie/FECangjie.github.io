@@ -66,7 +66,7 @@
              	charset:'utf-8'
              })
      	}
-         compiler.plugin('make', function() {
+         compiler.plugin('compilation', function() {
              writeData()
          })
          // writeData()

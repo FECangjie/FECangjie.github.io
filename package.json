@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@lianjia/zola-core": "0.0.4",
+    "react-html-parser": "^1.0.3",
     "showdown": "^1.7.1"
   },
   "redskull": {
@@ -17,7 +18,7 @@
     "src": "./src",
     "entry": "index.js",
     "dist": "./dist",
-    "openBrowser": false,
+    "openBrowser": true,
     "favico": "./src/favicon.ico"
   },
   "devDependencies": {
