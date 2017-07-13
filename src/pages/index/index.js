@@ -11,6 +11,7 @@ import LeftMenu from 'modules/leftMenu'
 import LeftAction from 'modules/leftAction'
 import articles from 'data/article'
 import AsyncComponent from 'modules/AsyncComponent'
+import ArticleRender from 'modules/ArticleRender'
 
 const articleList = MY_ARTICLE_DATA
 
@@ -33,7 +34,7 @@ export default class Index extends Page {
                                     <header className="entry-header">
                                         <h2 className="entry-title"><a href="" rel="bookmark">{article.title}</a></h2>
                                         <div className="entry-meta">
-                                        <span className="byline">By <span className="author vcard"><a className="url fn n" href="" title="View all posts by Ruth Clem">Ruth Clem</a></span></span><span className="cat-links"> in <a href="" rel="category tag">Delicious</a>, <a href="" rel="category tag">Freelancing</a>, <a href="http://demo.designwall.com/dw-minion/category/photography/" rel="category tag">Photography</a></span>
+                                        <span className="byline">By <span className="author vcard"><a className="url fn n" href="" title="View all posts by Ruth Clem">Ruth Clem</a></span></span><span className="cat-links"> in <a href="" rel="category tag">Delicious</a>, <a href="" rel="category tag">Freelancing</a>, <a href="" rel="category tag">Photography</a></span>
                                             <span className="sep"><span className="post-format"><i className="icon-file-text"></i></span></span><span className="posted-on"><a href="http://demo.designwall.com/dw-minion/2013/06/20/the-inside-secrets-of-millionaires-under-the-age-of-29/" title="12:00 am" rel="bookmark"><i className="icon-calendar-empty"></i> </a></span>
                                             <span className="comments-link"><a href="http://demo.designwall.com/dw-minion/2013/06/20/the-inside-secrets-of-millionaires-under-the-age-of-29/#comments"><i className="icon-comment-alt"></i> 4 Comments</a></span>
                                         </div>
@@ -41,8 +42,8 @@ export default class Index extends Page {
                                     <div className="entry-thumbnail">
                                     </div>
                                     <div className="entry-content">
-                                        <p>Quisque tincidunt metus aliquam orci tincidunt, ac sollicitudin massa lacinia. Nunc ligula enim, fringilla vitae neque vestibulum, fermentum semper tellus. Fusce magna nisi, tincidunt eu dui quis, tempus consequat ipsum.
-                                            <a href="http://demo.designwall.com/dw-minion/2013/06/20/the-inside-secrets-of-millionaires-under-the-age-of-29/" className="more-link"><span className="btn btn-small">Continue reading</span></a></p>
+                                    <p>{article.shortContent}</p>
+                                        <a href={`#/article${article.path}`} className="more-link"><span className="btn btn-small">阅读全文</span></a>
                                     </div>
                                 </article>
                 	      			)

@@ -1,91 +1,95 @@
 const fs = require('fs')
 const path = require('path')
+import Smd from 'summarize-markdown'
 
-const ARTCILE_PATH = path.join(__dirname, '..', 'article')
-/**
- * 查找所有文件
- * @param  {[type]} filepath [description]
- * @return {[type]}          [description]
- */
+const ARTICLE_PATH = path.join(__dirname,'..','article')
 
-const getAllMarkdownFile = function (filePath) {
-
-  function walkFile(filePath, callback) {
+const getAllMarkdownFile = function(filePath){
+  /*
+  1. 挨个查找文件
+   */
+  function walkFile(filePath){
     const stat = fs.statSync(filePath)
     let result = []
-
-    if (stat.isDirectory()) {
+    if(stat.isDirectory()){
+      // read dirs
       const dirs = fs.readdirSync(filePath)
-      dirs.forEach(p => {
-        const myPath = path.join(filePath, p)
+      dirs.forEach(p =>{
+        const myPath = path.join(filePath,p)
         const pStat = fs.statSync(myPath)
-        if (pStat.isDirectory()) {
+        if(pStat.isDirectory()){
           result = result.concat(walkFile(myPath))
-        } else {
+        }else{
           result.push(myPath)
         }
       })
-  } else {
-    result.push(filePath)
+    }else{
+      result.push(filePath)
+    }
+    return result
   }
-  console.log(result)
-
-
-  return result
-}
-
-/**
- * 过滤md
- */
-const markdownFile = walkFile(filePath).filter(p => {
-  return path.extname(p).toLowerCase() === '.md'
-})
-
-/**
- * 读取文件属性 默认时间
- */
- const result = markdownFile.map((file) =>{
-     const content = fs.readFileSync(file,{
-       charset:'utf-8'
-     }).toString()
-
-     const defaultDate = new Date()
-     const createTimeStr = content.split('\n').find(str =>{
-       if(str.indexOf('createTime') >=0){
-         return true
-       }
-       return false
-     }) || `:${defaultDate.toLocaleDateString()} ${defaultDate.toLocaleTimeString()}`
-
-     const createTimeArr = createTimeStr.split(':')
-     createTimeArr.shift()
-     const createTime = createTimeArr.join(":").trim()
-     const fileName = path.basename(file,'.md')
-
-     return {
-       title:fileName,
-       createTime
-     }
-  })
 
   /**
-   * 按照时间从大到小排序
+   * 2. 过滤markdown文件
+   *
    */
-  return result.sort((a1,a2) =>{
-   return a2.createTime - a1.createTime
+  const markdownFile = walkFile(filePath).filter((p)=>{
+    const extname = path.extname(p) // .md
+    return extname.toLowerCase() == '.md'
   })
+   /**
+    * 读取所有文件内容，查找文件内容里面标示的创建时间，如果没有，默认为今天
+    *
+    */
+   const result = markdownFile.map((file) =>{
+      const content = fs.readFileSync(file,{
+        charset:'utf-8'
+      }).toString()
+      const shortContent = Smd(content).substr(0,200)
+
+      const defaultDate = new Date()
+      const createTimeStr = content.split('\n').find(str =>{
+        if(str.indexOf('createTime') >=0){
+          return true
+        }
+        return false
+      }) || `:${defaultDate.toLocaleDateString()} ${defaultDate.toLocaleTimeString()}`
+
+      const createTimeArr = createTimeStr.split(':')
+      createTimeArr.shift()
+      const createTime = createTimeArr.join(":").trim()
+      const fileName = path.basename(file,'.md')
+      const filePath = file.replace(ARTICLE_PATH,'')
+      return {
+        title:fileName,
+        shortContent: shortContent + '...',
+        path:filePath.replace('.md',''),
+        createTime
+      }
+   })
+
+   /**
+    * 按照时间从大到小排序
+    */
+   return result.sort((a1,a2) =>{
+    return a2.createTime - a1.createTime
+   })
 }
 
-module.exports = function (redskull, env) {
-  const list = getAllMarkdownFile(ARTCILE_PATH)
+
+module.exports = function(redskull, env) {
+
+  const list = getAllMarkdownFile(ARTICLE_PATH)
+
   /*
-{
-title: '',
-cTime: ''
-}
-   */
-  console.log(JSON.stringify(list))
+  [
+    {
+      title:'',
+      createTime:'',
+    }
+  ]
+  */
   return {
-    MY_ARTICLE_DATA: JSON.stringify(list)
+    MY_ARTICLE_DATA:JSON.stringify(list)
   }
 }

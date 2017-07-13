@@ -6,7 +6,6 @@ export default class extends React.Component{
 		const comFn = this.props.comFn
 		comFn.then((Component) =>{
 			this.renderComponent = Component.default ? Component.default:Component
-			console.log(this.renderComponent)
 			this.forceUpdate()
 		})
 	}
@@ -18,6 +17,7 @@ export default class extends React.Component{
 		// 	return null
 		// }
 		const renderComponent = this.renderComponent || 'div'
+		console.log(renderComponent)
 		return React.createElement(renderComponent, {}, [])
 	}
 }

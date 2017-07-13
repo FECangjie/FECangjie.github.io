@@ -55,7 +55,7 @@
              })
 
              const content = getFileContent(articles)
-             console.log(content == currentFileConent)
+            //  console.log(content == currentFileConent)
 
              if(content == currentFileConent){
              	return

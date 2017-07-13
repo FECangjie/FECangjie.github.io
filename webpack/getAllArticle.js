@@ -1,9 +1,10 @@
 /**
  * 获取所有markdown文件的数据
- * 
+ *
  */
 const fs = require('fs')
 const path = require('path')
+import Smd from 'summarize-markdown'
 
 const ARTICLE_PATH = path.join(__dirname,'..','article')
 
@@ -34,7 +35,7 @@ const getAllMarkdownFile = function(filePath){
 
   /**
    * 2. 过滤markdown文件
-   * 
+   *
    */
   const markdownFile = walkFile(filePath).filter((p)=>{
     const extname = path.extname(p) // .md
@@ -42,13 +43,13 @@ const getAllMarkdownFile = function(filePath){
   })
    /**
     * 读取所有文件内容，查找文件内容里面标示的创建时间，如果没有，默认为今天
-    * 
+    *
     */
    const result = markdownFile.map((file) =>{
       const content = fs.readFileSync(file,{
         charset:'utf-8'
       }).toString()
-
+      const shortContent = Smd(content).substr(0,200)
       const defaultDate = new Date()
       const createTimeStr = content.split('\n').find(str =>{
         if(str.indexOf('createTime') >=0){
@@ -57,7 +58,7 @@ const getAllMarkdownFile = function(filePath){
         return false
       }) || ``
       // }) || `:${defaultDate.toLocaleDateString()} ${defaultDate.toLocaleTimeString()}`
-      
+
       const createTimeArr = createTimeStr.split(':')
       createTimeArr.shift()
       const createTime = createTimeArr.join(":").trim()
@@ -65,6 +66,7 @@ const getAllMarkdownFile = function(filePath){
       const filePath = file.replace(ARTICLE_PATH,'')
       return {
         title:fileName,
+        shortContent: shortContent,
         path:filePath.replace('.md',''),
         createTime
       }
@@ -80,7 +82,7 @@ const getAllMarkdownFile = function(filePath){
 
 
 module.exports = function(redskull, env) {
-  
+
   const list = getAllMarkdownFile(ARTICLE_PATH)
 
   /*

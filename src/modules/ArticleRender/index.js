@@ -1,10 +1,13 @@
+/**
+ * old
+ */
 import { React } from 'zola'
 import showdown from 'showdown'
 import './markdown.styl'
 export default class extends React.Component{
 	constructor(props) {
 	  super(props);
-	
+
 	  this.state = {
 	  	content:null
 	  };
@@ -13,7 +16,7 @@ export default class extends React.Component{
 		const filePath = this.props.articlePath
 	  	fetch(filePath).then((data) =>{
 	  		data.text().then(text =>{
-	  			
+
 	  			const converter = new showdown.Converter()
 	  			converter.setOption('tables', true);
 	  			const content   = converter.makeHtml(text);
@@ -21,7 +24,7 @@ export default class extends React.Component{
 	  		})
 	  	})
 	}
-	
+
 	render(){
 		const {content} = this.state
 		if(content == null){
