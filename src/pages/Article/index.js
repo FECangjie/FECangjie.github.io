@@ -6,13 +6,13 @@
 
 import { React, Page } from 'zola'
 // import ArticleMap  from 'data/article'
-import AsyncComponent from 'modules/AsyncComponent'
 import ArticleRender from 'modules/ArticleRender'
 export default class Index extends Page {
 
   render () {
   	const filePath = this.props.params.path
   	const path = `/article/${filePath}.md`
+    console.log(path)
     return (
       <div>
       	<ArticleRender articlePath={path}/>
