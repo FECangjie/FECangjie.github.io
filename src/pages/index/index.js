@@ -34,9 +34,9 @@ export default class Index extends Page {
                                     <header className="entry-header">
                                         <h2 className="entry-title"><a href="" rel="bookmark">{article.title}</a></h2>
                                         <div className="entry-meta">
-                                        <span className="byline">By <span className="author vcard"><a className="url fn n" href="" title="View all posts by Ruth Clem">Ruth Clem</a></span></span><span className="cat-links"> in <a href="" rel="category tag">Delicious</a>, <a href="" rel="category tag">Freelancing</a>, <a href="" rel="category tag">Photography</a></span>
-                                            <span className="sep"><span className="post-format"><i className="icon-file-text"></i></span></span><span className="posted-on"><a href="http://demo.designwall.com/dw-minion/2013/06/20/the-inside-secrets-of-millionaires-under-the-age-of-29/" title="12:00 am" rel="bookmark"><i className="icon-calendar-empty"></i> </a></span>
-                                            <span className="comments-link"><a href="http://demo.designwall.com/dw-minion/2013/06/20/the-inside-secrets-of-millionaires-under-the-age-of-29/#comments"><i className="icon-comment-alt"></i> 4 Comments</a></span>
+                                        <span className="cat-links">今天天气不错</span>
+                                        <br/>
+                                        <span className="comments-link">{article.createTime}</span>
                                         </div>
                                     </header>
                                     <div className="entry-thumbnail">
