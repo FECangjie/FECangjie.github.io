@@ -46,7 +46,7 @@ export default class Index extends Page {
                                         <h2 className="entry-title"><a href={`#/article${article.path}`} rel="bookmark">{article.title}</a></h2>
                                         <div className="entry-meta">
                                         <span className="cat-links">今天天气不错</span>
-                                        <br/>
+                                        <span className="sep"><span className="post-format"></span></span>
                                         <span className="comments-link">{article.createTime}</span>
                                         </div>
                                     </header>

@@ -1,8 +1,6 @@
 # 揭开React风靡前端开发领域的面纱
 
-![](file:///Users/mawenting/Desktop/Yes,%20React%20is%20taking%20over%20front-end%20development.%20The%20question%20is%20why._files/1-3IUcek7o2S5aJnFAgtP5Gg(1).png)
-
-[^本文的重点是React受欢迎的原因，而不是与其他框架或库进行比较]: 
+[^本文的重点是React受欢迎的原因，而不是与其他框架或库进行比较]:
 
 以下是React如此迅速流行的几个原因：
 
@@ -336,4 +334,3 @@ React有一个聪明的diffing算法：通过差异比较，仅对需要更新�
 
 
 > 原文链接[https://medium.freecodecamp.com/yes-react-is-taking-over-front-end-development-the-question-is-why-40837af8ab76](https://medium.freecodecamp.com/yes-react-is-taking-over-front-end-development-the-question-is-why-40837af8ab76)
-

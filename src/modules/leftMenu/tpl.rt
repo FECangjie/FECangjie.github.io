@@ -10,7 +10,7 @@
 				<aside id="nav_menu-2" class="widget widget_nav_menu">
 					<div class="menu-main-menu-container">
 						<ul id="menu-main-menu" class="menu">
-							<li id="menu-item-113" class={this.state.hash=='/'||this.state.hash=='#/'?'current_page_item':''}><a href="/">首页</a></li>
+							<li id="menu-item-113" class={this.state.hash=='/'||this.state.hash=='#/'?'current_page_item':''}><a href="#/">首页</a></li>
 							<li id="menu-item-97" class='{this.state.hash.indexOf("about")>0?"current_page_item":""}'><a href="#/about">关于</a></li>
 							<li id="menu-item-114" class='{this.state.hash.indexOf("list")>0?"current_page_item":""}'><a href="#/list">文章</a>
 								<ul class="sub-menu">
