@@ -1,18 +1,18 @@
 <div id="actions" class="site-actions clearfix">
-      <div class="action show-site-nav">
-          <i class="icon-reorder"></i>
-      </div>
-      <div class="clearfix actions">
-          <div class="action search">
-              <form action="http://demo.designwall.com/dw-minion/" class="action searchform">
-                  <input type="text" placeholder="Search" id="s" name="s" class="search-query">
-                  <label for="s"></label>
-              </form>
-          </div>
-          <a class="back-top action" href="#page"><i class="icon-chevron-up"></i></a>
-                    <div class="action socials">
-              <i class="icon-link active-socials"></i>
-              <ul class="unstyled list-socials clearfix" style="width: 240px;">
-                  <li class="social"><a href="#"><i class="icon-facebook"></i></a></li>                  <li class="social"><a href="#"><i class="icon-twitter"></i></a></li>                  <li class="social"><a href="#"><i class="icon-google-plus"></i></a></li>                  <li class="social"><a href="#"><i class="icon-youtube"></i></a></li>                  <li class="social"><a href="#"><i class="icon-linkedin"></i></a></li>                  <li class="social"><a href="#"><i class="icon-github"></i></a></li>              </ul>          </div>
-      </div>
-  </div>
+    <div class="action show-site-nav">仓颉
+    </div>
+    <div class="clearfix actions">
+        <div class="action search">
+            <form action="http://demo.designwall.com/dw-minion/" class="action searchform">
+                <input type="text" placeholder="Search" id="s" name="s" class="search-query">
+            </form>
+        </div>
+        <a class="back-top action" href="#">顶部</a>
+        <div class="action socials">
+            <i class="icon-link active-socials"></i>
+            <ul class="unstyled list-socials clearfix" style="width: 240px;">
+                <!-- <li class="social"><a href="#">仓颉</a></li> -->
+            </ul>
+        </div>
+    </div>
+</div>

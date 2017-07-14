@@ -10,6 +10,10 @@ import './style.less'
 
 export default class Index extends Page {
   componentWillMount () {
+    let me = this
+    me.setState({
+      hash: location.hash
+    })
   }
   render () {
     return Tpl.apply(this)

@@ -66,7 +66,7 @@ const getAllMarkdownFile = function(filePath){
       const filePath = file.replace(ARTICLE_PATH,'')
       return {
         title:fileName,
-        shortContent: shortContent,
+        shortContent: shortContent + '...',
         path:filePath.replace('.md',''),
         createTime
       }

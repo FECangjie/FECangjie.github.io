@@ -2,23 +2,23 @@
 	<div class="site-nav-inner">
 		<div class="container">
 			<header id="masthead" class="site-header" role="banner">
-				<h1 class="site-title display-logo"><a href="#" title="DW Minion" rel="home"><img alt="DW Minion" src="../../resources/images/face.png"></a></h1>
+				<h1 class="site-title display-logo"><a href="#" title="DW Minion" rel="home"><img alt="DW Minion" src="../../resources/images/cj.jpeg"></a></h1>
 				<p class="site-subtitle">仓颉的早年生涯</p>
-				<h2 class="site-description">hi
+				<h2 class="site-description">顽固自己。
 						</h2> </header>
 			<div id="main-sidebar" class="widget-area" role="complementary">
 				<aside id="nav_menu-2" class="widget widget_nav_menu">
 					<div class="menu-main-menu-container">
 						<ul id="menu-main-menu" class="menu">
-							<li id="menu-item-113" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-113"><a href="http://demo.designwall.com/dw-minion/">首页</a></li>
-							<li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="http://demo.designwall.com/dw-minion/about-me/">关于</a></li>
-							<li id="menu-item-114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-114"><a href="#">文章</a>
+							<li id="menu-item-113" class={this.state.hash=='/'||this.state.hash=='#/'?'current_page_item':''}><a href="/">首页</a></li>
+							<li id="menu-item-97" class='{this.state.hash.indexOf("about")>0?"current_page_item":""}'><a href="#/about">关于</a></li>
+							<li id="menu-item-114" class='{this.state.hash.indexOf("list")>0?"current_page_item":""}'><a href="#/list">文章</a>
 								<ul class="sub-menu">
-									<li id="menu-item-191" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-191"><a href="http://demo.designwall.com/dw-minion/2013/06/20/the-inside-secrets-of-millionaires-under-the-age-of-29/">前端</a></li>
-									<li id="menu-item-192" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-192"><a href="http://demo.designwall.com/dw-minion/2013/06/16/responsive-wordpress-themes/">音乐</a></li>
+									<li id="menu-item-191" class='{this.state.hash.indexOf("fe")>0?"current_page_item":""}'><a href="#/fe">前端</a></li>
+									<li id="menu-item-192" class='{this.state.hash.indexOf("music")>0?"current_page_item":""}'><a href="#/music">音乐</a></li>
 								</ul>
 							</li>
-							<li id="menu-item-112" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-112"><a href="http://demo.designwall.com/dw-minion/contact/">归档</a></li>
+							<li id="menu-item-112" class='{this.state.hash.indexOf("gui")>0?"current_page_item":""}'><a href="#/gui">归档</a></li>
 						</ul>
 					</div>
 				</aside>
@@ -42,10 +42,10 @@
 				<aside id="meta-2" class="widget widget_meta">
 					<h3 class="widget-title">标签</h3>
 					<ul>
-						<li><a href="http://demo.designwall.com/dw-minion/wp-login.php">javascript</a></li>
-						<li><a href="http://demo.designwall.com/dw-minion/feed/">钢琴</a></li>
-						<li><a href="http://demo.designwall.com/dw-minion/comments/feed/">电子音乐</a></li>
-						<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">css</a></li>
+						<li>javascript</li>
+						<li>css</li>
+						<li>电子音乐</li>
+						<li>视频</li>
 					</ul>
 				</aside>
 			</div>

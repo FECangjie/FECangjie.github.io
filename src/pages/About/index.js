@@ -32,7 +32,10 @@ export default class Index extends Page {
                   <div id="primary" className="content-area">
                       <div className="primary-inner">
                           <div id="content" className="site-content content-list" role="main">
-      <AsyncComponent comFn={article.component()}/>
+                          我并不渴求那些超人类的天赋<br/>
+                          那种超级英雄<br/>
+                          那些童话般的天赐之福 <br/>
+                          只想做到一些我力所能及的事情<br/>
       </div>
   </div>
 </div>

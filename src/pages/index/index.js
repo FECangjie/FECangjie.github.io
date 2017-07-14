@@ -16,6 +16,17 @@ import ArticleRender from 'modules/ArticleRender'
 const articleList = MY_ARTICLE_DATA
 
 export default class Index extends Page {
+  componentWillMount () {
+    let me = this
+    me.setState({
+      num: articleList.length || 0,
+      pageCount: 1,
+    })
+  }
+
+  goPage (type, page) {
+
+  }
   render () {
     return (
       <div className="container clearfix">
@@ -32,7 +43,7 @@ export default class Index extends Page {
                 		      		return (
                                 <article key={index} id="post-33" className="post-33 post type-post status-publish format-standard has-post-thumbnail hentry category-delicious category-freelancing category-photography tag-playing tag-shopping">
                                     <header className="entry-header">
-                                        <h2 className="entry-title"><a href="" rel="bookmark">{article.title}</a></h2>
+                                        <h2 className="entry-title"><a href={`#/article${article.path}`} rel="bookmark">{article.title}</a></h2>
                                         <div className="entry-meta">
                                         <span className="cat-links">今天天气不错</span>
                                         <br/>
@@ -43,12 +54,19 @@ export default class Index extends Page {
                                     </div>
                                     <div className="entry-content">
                                     <p>{article.shortContent}</p>
-                                        <a href={`#/article${article.path}`} className="more-link"><span className="btn btn-small">阅读全文</span></a>
+                                        <a href={`#/article${article.path}`} className="more-link"><span className="btn btn-small btn-read">阅读全文</span></a>
                                     </div>
                                 </article>
                 	      			)
                 		      	})
                 		      }
+                          <nav role="navigation" id="nav-below" className="paging-navigation pager">
+			<div className="nav-previous">
+							<span className="meta-nav btn disabled" style={{width:100}} onClick={this.goPage('up')}>上一页</span>				</div>
+		<div className="nav-next">
+							<span className="btn disabled" style={{width:100}} onClick={this.goPage('down')}>下一页</span>
+					</div>
+		</nav>
                   </div>
               </div>
           </div>

@@ -32,7 +32,7 @@ export default class Index extends Page {
                   <div id="primary" className="content-area">
                       <div className="primary-inner">
                           <div id="content" className="site-content content-list" role="main">
-      <AsyncComponent comFn={article.component()}/>
+                          it will back ~
       </div>
   </div>
 </div>

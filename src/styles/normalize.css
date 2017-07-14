@@ -3809,6 +3809,7 @@ table th[class*="span"],
 .table-hover tbody tr.info:hover > td {
   background-color: #c4e3f3;
 }
+/*按钮*/
 .btn {
   display: inline-block;
   padding: 5px 15px;
@@ -3818,10 +3819,10 @@ table th[class*="span"],
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  color: #ffffff;
-  border: none;
+  color: #f5f5f5;
+  /*border: 1px solid #7cc576;*/
   font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #333333;
+  background-color: #666;
   text-transform: capitalize;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
