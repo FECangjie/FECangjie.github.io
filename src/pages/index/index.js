@@ -41,7 +41,7 @@ export default class Index extends Page {
                           {
                 		      	articleList.map((article,index) =>{
                 		      		return (
-                                <article key={index} id="post-33" className="post-33 post type-post status-publish format-standard has-post-thumbnail hentry category-delicious category-freelancing category-photography tag-playing tag-shopping">
+                                <article key={index} id="post-33" className="">
                                     <header className="entry-header">
                                         <h2 className="entry-title"><a href={`#/article${article.path}`} rel="bookmark">{article.title}</a></h2>
                                         <div className="entry-meta">
