@@ -617,7 +617,7 @@ a .icon-flip-vertical:before {
   content: "\f052";
 }
 .icon-chevron-left:before {
-  content: "\f053";
+  /* content: "\f053"; */
 }
 .icon-chevron-right:before {
   content: "\f054";
@@ -2268,10 +2268,10 @@ blockquote p {
   margin-bottom: 10px;
 }
 blockquote p:before {
-  content: "â€˜â€˜";
+  content: "‘‘";
 }
 blockquote p:after {
-  content: "â€™â€™";
+  content: "’’";
 }
 blockquote cite {
   position: relative;
@@ -4171,7 +4171,7 @@ input[type="submit"].btn-small {
   position: relative;
 }
 .widget_categories .children li:before {
-  content: "â”€";
+  content: "─";
   position: absolute;
   left: 0;
   top: -1px;
@@ -4207,7 +4207,7 @@ input[type="submit"].btn-small {
   position: relative;
 }
 .widget_nav_menu .sub-menu li:before {
-  content: "â”€";
+  content: "─";
   position: absolute;
   left: 0;
   top: -1px;
@@ -4254,7 +4254,7 @@ input[type="submit"].btn-small {
   position: relative;
 }
 .widget_pages .children li:before {
-  content: "â”€";
+  content: "─";
   position: absolute;
   left: 0;
   top: -3px;
