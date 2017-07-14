@@ -9,7 +9,19 @@
 
  	},
  	{
+ 		"title":"当妮走了","shortContent":"#当妮走了 ##徐真真： 作曲 : 徐真真／杨溢升\n作词 : 徐真真／熊猫\nbaby当妮走了 我发誓不会堕落\n即使当妮走后 也关注你的微博\n这次 真的走了 生命最美的过客\n那还在等什么 谢谢你给的沉默\n我曾经质问自己觉得最得意 的判断\n偏偏在 最活跃的时期 感到精神涣散\n中了暗算 被牵动那种感觉不能怠慢\n也想过跟你一起富贵 一起共度患难\n不知从 何时你也怀疑 我在劈腿\n强调了最有力的解释 你却说我...","path":"/freestyle/当妮走了","createTime":"","component":()=>System.import('article/freestyle/当妮走了.md')
+
+ 	},
+ 	{
  		"title":"日记","shortContent":"#CSS变量，来了？ ##简介： Web开发人员一直希望，可以在css开发中能够使用强大的变量。现在，CSS变量终于来了。在这篇文章中，我们会追忆CSS变量的历史，重要性以及应用，在这里你能够了解到如何利用CSS变量，来使CSS的开发和维护变得更快更容易 CSS变量的历史是坎坷的。该功能最初是由W3C在2012年提出，但是只有Chrome和Firefox对该特性进行了实现。 当该规范在2014年得...","path":"/freestyle/日记","createTime":"","component":()=>System.import('article/freestyle/日记.md')
+
+ 	},
+ 	{
+ 		"title":"晴天","shortContent":"#晴天 ##周杰伦： re so so xi do xi la so la xi xi xi xi la xi la so...","path":"/freestyle/晴天","createTime":"","component":()=>System.import('article/freestyle/晴天.md')
+
+ 	},
+ 	{
+ 		"title":"顽固","shortContent":"#顽固 ##五月天：...","path":"/freestyle/顽固","createTime":"","component":()=>System.import('article/freestyle/顽固.md')
 
  	}]
  	
