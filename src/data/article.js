@@ -5,11 +5,11 @@
 
  	},
  	{
- 		"title":"日记","shortContent":"#CSS变量，来了？ ##简介： Web开发人员一直希望，可以在css开发中能够使用强大的变量。现在，CSS变量终于来了。在这篇文章中，我们会追忆CSS变量的历史，重要性以及应用，在这里你能够了解到如何利用CSS变量，来使CSS的开发和维护变得更快更容易 CSS变量的历史是坎坷的。该功能最初是由W3C在2012年提出，但是只有Chrome和Firefox对该特性进行了实现。 当该规范在2014年得...","path":"/fe/日记","createTime":"","component":()=>System.import('article/fe/日记.md')
+ 		"title":"马克飞象","shortContent":"欢迎使用马克飞象: @(示例笔记本)[马克飞象|帮助|Markdown] 马克飞象是一款专为印象笔记（Evernote）打造的Markdown编辑器，通过精心的设计与技术实现，配合印象笔记强大的存储和同步功能，带来前所未有的书写体验。特点概述： 功能丰富 ：支持高亮代码块、LaTeX 公式、流程图，本地图片以及附件上传，甚至截图粘贴，工作学习好帮手；.得心应手 ：简洁高效的编辑器，提供桌面客户端以...","path":"/fe/马克飞象","createTime":"","component":()=>System.import('article/fe/马克飞象.md')
 
  	},
  	{
- 		"title":"马克飞象","shortContent":"欢迎使用马克飞象: @(示例笔记本)[马克飞象|帮助|Markdown] 马克飞象是一款专为印象笔记（Evernote）打造的Markdown编辑器，通过精心的设计与技术实现，配合印象笔记强大的存储和同步功能，带来前所未有的书写体验。特点概述： 功能丰富 ：支持高亮代码块、LaTeX 公式、流程图，本地图片以及附件上传，甚至截图粘贴，工作学习好帮手；.得心应手 ：简洁高效的编辑器，提供桌面客户端以...","path":"/fe/马克飞象","createTime":"","component":()=>System.import('article/fe/马克飞象.md')
+ 		"title":"日记","shortContent":"#CSS变量，来了？ ##简介： Web开发人员一直希望，可以在css开发中能够使用强大的变量。现在，CSS变量终于来了。在这篇文章中，我们会追忆CSS变量的历史，重要性以及应用，在这里你能够了解到如何利用CSS变量，来使CSS的开发和维护变得更快更容易 CSS变量的历史是坎坷的。该功能最初是由W3C在2012年提出，但是只有Chrome和Firefox对该特性进行了实现。 当该规范在2014年得...","path":"/freestyle/日记","createTime":"","component":()=>System.import('article/freestyle/日记.md')
 
  	}]
  	

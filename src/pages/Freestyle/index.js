@@ -42,7 +42,7 @@ export default class Index extends Page {
                           <div id="content" className="site-content content-list" role="main">
                           {
                 		      	articleList.map((article,index) =>{
-                              if (article.path.substr(0,6) !== '/music') {
+                              if (article.path.substr(0,10) !== '/freestyle') {
                                 return false
                               }
                               this.state.blogNum ++
@@ -77,7 +77,7 @@ export default class Index extends Page {
   		<div className="nav-next">
   							<span className="btn disabled" style={{width:100}} onClick={this.goPage('down')}>下一页</span>
   					</div>
-  		</nav>) : (<div>暂无音乐相关文章</div>)
+  		</nav>) : (<div>暂无即兴创作的文章</div>)
                           }
                   </div>
               </div>

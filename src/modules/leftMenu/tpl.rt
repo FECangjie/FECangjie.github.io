@@ -15,6 +15,7 @@
 							<li id="menu-item-114" class='{this.state.hash.indexOf("list")>0?"current_page_item":""}'><a href="#/list">文章</a>
 								<ul class="sub-menu">
 									<li id="menu-item-191" class='{this.state.hash.indexOf("fe")>0?"current_page_item":""}'><a href="#/fe">前端</a></li>
+									<li id="menu-item-192" class='{this.state.hash.indexOf("freestyle")>0?"current_page_item":""}'><a href="#/freestyle">即兴</a></li>
 									<li id="menu-item-192" class='{this.state.hash.indexOf("music")>0?"current_page_item":""}'><a href="#/music">音乐</a></li>
 								</ul>
 							</li>

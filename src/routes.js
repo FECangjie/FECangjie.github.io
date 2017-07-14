@@ -14,6 +14,7 @@ export default zola.router({
     { path: '/article/*', component: System.import('pages/Article/index') },
     { path: '/about', component: System.import('pages/About/index') },
     { path: '/fe', component: System.import('pages/Fe/index') },
+    { path: '/freestyle', component: System.import('pages/Freestyle/index') },
     { path: '/music', component: System.import('pages/Music/index') },
     { path: '/gui', component: System.import('pages/Gui/index') },
     // ==== router end   ==== //
