@@ -9,19 +9,40 @@ import articles from 'data/article'
 import LeftMenu from 'modules/leftMenu'
 import LeftAction from 'modules/leftAction'
 import AsyncComponent from 'modules/AsyncComponent'
+import articleList from 'data/article'
 
-const articleList = MY_ARTICLE_DATA
-export default class Index extends Page {
+export default class Article extends Page {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: '',
+      content: '',
+      author: '',
+      createTime: '',
+      tags: []
+    }
+  }
+
+  componentWillMount() {
+    const filePath = this.props.params.splat
+  	const path = `/article/${filePath}.md`
+    let article = articleList.find(item =>
+      !!(item.path.indexOf(filePath) > 0)
+    )
+    article.component().then(content => {
+      this.setState({
+        content,
+        author: article.author,
+        createTime: article.createTime,
+        title: article.title,
+        tags: article.tags || []
+      });
+    });
+  }
 
   render () {
-  	const filePath = this.props.params.splat
-  	const path = `/article/${filePath}.md`
-    let article = {}
-    articles.forEach((item, i) => {
-      if (item.path.indexOf(filePath) > 0) {
-        article = item
-      }
-    })
+
     return (
       <div className="container clearfix">
       <LeftMenu></LeftMenu>
@@ -33,7 +54,8 @@ export default class Index extends Page {
                       <div className="primary-inner">
                           <div id="content" className="site-content content-list" role="main">
                           <div className="markdown">
-      <AsyncComponent comFn={article.component()}/>
+                          {!!this.state.content ?
+      <AsyncComponent com={this.state.content}/> : <div>文章加载中...</div>}
       </div>
       </div>
   </div>
