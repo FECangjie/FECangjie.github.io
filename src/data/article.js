@@ -17,6 +17,18 @@
 
  	},
  	{
+ 		"title":"日记0","shortContent":"#CSS变量，来了？ ##简介： Web开发人员一直希望，可以在css开发中能够使用强大的变量。现在，CSS变量终于来了。在这篇文章中，我们会追忆CSS变量的历史，重要性以及应用，在这里你能够了解到如何利用CSS变量，来使CSS的开发和维护变得更快更容易 CSS变量的历史是坎坷的。该功能最初是由W3C在2012年提出，但是只有Chrome和Firefox对该特性进行了实现。 当该规范在2014年得...","path":"/freestyle/日记0","createTime":"","component":()=>System.import('article/freestyle/日记0.md')
+
+ 	},
+ 	{
+ 		"title":"日记1","shortContent":"#CSS变量，来了？ ##简介： Web开发人员一直希望，可以在css开发中能够使用强大的变量。现在，CSS变量终于来了。在这篇文章中，我们会追忆CSS变量的历史，重要性以及应用，在这里你能够了解到如何利用CSS变量，来使CSS的开发和维护变得更快更容易 CSS变量的历史是坎坷的。该功能最初是由W3C在2012年提出，但是只有Chrome和Firefox对该特性进行了实现。 当该规范在2014年得...","path":"/freestyle/日记1","createTime":"","component":()=>System.import('article/freestyle/日记1.md')
+
+ 	},
+ 	{
+ 		"title":"日记2","shortContent":"#CSS变量，来了？ ##简介： Web开发人员一直希望，可以在css开发中能够使用强大的变量。现在，CSS变量终于来了。在这篇文章中，我们会追忆CSS变量的历史，重要性以及应用，在这里你能够了解到如何利用CSS变量，来使CSS的开发和维护变得更快更容易 CSS变量的历史是坎坷的。该功能最初是由W3C在2012年提出，但是只有Chrome和Firefox对该特性进行了实现。 当该规范在2014年得...","path":"/freestyle/日记2","createTime":"","component":()=>System.import('article/freestyle/日记2.md')
+
+ 	},
+ 	{
  		"title":"晴天","shortContent":"#晴天 ##周杰伦： re so so xi do xi la so la xi xi xi xi la xi la so...","path":"/freestyle/晴天","createTime":"","component":()=>System.import('article/freestyle/晴天.md')
 
  	},

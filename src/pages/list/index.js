@@ -19,7 +19,7 @@ export default class Index extends Page {
   componentWillMount () {
     let me = this
     let articleListFilter = articleList.filter((article,index) => { // 过滤
-      if (article.path.split('/')[1] !== location.hash.split('/')[1]) {
+      if (article.path.split('/')[1] !== location.hash.split('/')[1] && location.hash.split('/')[1] !=='list') {
         return false
       }
       return article
