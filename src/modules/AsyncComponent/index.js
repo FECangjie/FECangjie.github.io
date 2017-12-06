@@ -1,5 +1,5 @@
 import { React } from 'zola'
-
+import './markdown.styl'
 
 export default class extends React.Component{
 	componentWillMount(){

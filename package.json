@@ -1,11 +1,11 @@
 {
-  "name": "freestyle",
+  "name": "仓颉的早年生涯",
   "version": "0.0.1",
   "description": "a react application powerd by zola",
   "scripts": {
-    "start": "ENVIRONMENT=development redskull start --dashboard false",
-    "test": "ENVIRONMENT=testing redskull build",
-    "build": "ENVIRONMENT=production redskull build --publicPath https://fecangjie.github.io/dist/ && cp -f ./dist/index.html ./index.html && cp -f ./src/resources/images ./dist/images"
+    "start": "ENV=dev redskull start --dashboard false",
+    "test": "ENV=test redskull build",
+    "build": "ENV=prod redskull build --publicPath https://fecangjie.github.io/dist/ && cp -f ./dist/index.html ./index.html && cp -f ./src/resources/images ./dist/images"
   },
   "license": "ISC",
   "dependencies": {
