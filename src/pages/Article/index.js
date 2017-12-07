@@ -1,7 +1,5 @@
 /**
- *  === page ===
- *
- *  created at: Tue Jun 27 2017 18:27:29 GMT+0800 (CST)
+ *  核心博客内容页面
  */
 
 import { React, Page } from 'zola'
@@ -11,6 +9,7 @@ import LeftAction from 'modules/leftAction'
 import AsyncComponent from 'modules/AsyncComponent'
 import articleList from 'data/article'
 import highlight from 'highlight.js'
+import './style.less'
 
 export default class Article extends Page {
 
@@ -48,19 +47,34 @@ export default class Article extends Page {
   }
 
   render () {
-    console.log(this.state.content)
-
+    let {content, author, createTime, title, tags} = this.state;
     return (
       <div className="container clearfix">
       <LeftMenu></LeftMenu>
       <LeftAction></LeftAction>
-      <div id="main" className="site-main" style={{minHeight: 382}}>
+      <div id="main" className="site-main article" style={{minHeight: 382}}>
           <div className="site-main-inner">
               <div className="container clearfix">
                   <div id="primary" className="content-area">
                       <div className="primary-inner">
                           <div id="content" className="site-content content-list" role="main">
                           <div className="markdown">
+                          <div className="article-header">
+                            <div className="header-wrap">
+                              <h1>{title}</h1>
+                              <div className="pub-time">
+                                <i className=""></i><span>{createTime}</span>
+                              </div>
+                              <div className="author">
+                                <i className=""></i><span>{author}</span>
+                              </div>
+                              <div className="article-tags">
+                                {
+                                  tags.map(v => <span>{v}</span>)
+                                }
+                              </div>
+                            </div>
+                          </div>
                           {!!this.state.content ?
       <AsyncComponent com={this.state.content}/> : <div>文章加载中...</div>}
       </div>

@@ -5,12 +5,11 @@
  */
 
 import { React, Page } from 'zola'
-import articles from 'data/article'
+import articleList from 'data/article'
 import LeftMenu from 'modules/leftMenu'
 import LeftAction from 'modules/leftAction'
 import AsyncComponent from 'modules/AsyncComponent'
 
-const articleList = MY_ARTICLE_DATA
 export default class Index extends Page {
 
   render () {

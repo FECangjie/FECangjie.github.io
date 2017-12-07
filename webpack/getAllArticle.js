@@ -41,6 +41,7 @@ const getAllMarkdownFile = function(filePath){
     const extname = path.extname(p) // .md
     return extname.toLowerCase() == '.md'
   })
+
    /**
     * 读取所有文件内容，查找文件内容里面标示的创建时间，如果没有，默认为今天
     *
@@ -49,27 +50,32 @@ const getAllMarkdownFile = function(filePath){
       const content = fs.readFileSync(file,{
         charset:'utf-8'
       }).toString()
-      const shortContent = Smd(content).substr(0,200)
-      const defaultDate = new Date()
-      const createTimeStr = content.split('\n').find(str =>{
-        if(str.indexOf('createTime') >=0){
-          return true
-        }
-        return false
-      }) || ``
-      // }) || `:${defaultDate.toLocaleDateString()} ${defaultDate.toLocaleTimeString()}`
 
-      const createTimeArr = createTimeStr.split(':')
-      createTimeArr.shift()
-      const createTime = createTimeArr.join(":").trim()
-      const fileName = path.basename(file,'.md')
-      const filePath = file.replace(ARTICLE_PATH,'')
-      return {
-        title:fileName,
-        shortContent: shortContent + '...',
-        path:filePath.replace('.md',''),
-        createTime
-      }
+      const start = content.indexOf("---");
+      const end = content.indexOf("---", start+3) + 3;
+      let header = content.substring(start, end),
+      obj = {};
+
+      const shortContent = Smd(content.replace(header, "")).substr(0,200)
+      header = header.substring(3, header.length - 3);
+      const arr = header.split("\n");
+
+      arr.forEach(v => {
+        if(!!v.trim()){
+          const temp = v.split(":");
+          obj[temp[0].trim()] = temp[1].trim();
+        }
+      })
+
+      const fileName = path.basename(file, '.md');
+      const filePath = file.replace(ARTICLE_PATH, '')
+
+      return Object.assign(obj, {
+        content,
+        fileName,
+        path: filePath,
+        shortContent: `${shortContent}...`
+      })
    })
 
    /**

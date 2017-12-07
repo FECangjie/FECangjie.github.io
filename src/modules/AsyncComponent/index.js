@@ -5,7 +5,6 @@ export default class extends React.Component{
 	componentWillMount(){
 		const Component = this.props.com
 		this.renderComponent = Component.default ? Component.default : Component
-		console.log(this.renderComponent)
 		this.forceUpdate()
 	}
 	componentWillUnmount() {

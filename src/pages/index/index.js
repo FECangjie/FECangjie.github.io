@@ -9,11 +9,9 @@ import Tpl from './tpl.rt'
 import './style.less'
 import LeftMenu from 'modules/leftMenu'
 import LeftAction from 'modules/leftAction'
-import articles from 'data/article'
+import articleList from 'data/article'
 import AsyncComponent from 'modules/AsyncComponent'
 import ArticleRender from 'modules/ArticleRender'
-
-const articleList = MY_ARTICLE_DATA
 
 export default class Index extends Page {
   componentWillMount () {

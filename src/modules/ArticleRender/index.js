@@ -15,7 +15,6 @@ export default class extends React.Component{
 		const filePath = this.props.articlePath
 	  	fetch(filePath).then((data) =>{
 	  		data.text().then(text =>{
-
 	  			const converter = new showdown.Converter()
 	  			converter.setOption('tables', true);
 	  			const content   = converter.makeHtml(text);
