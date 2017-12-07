@@ -2,7 +2,7 @@
 	<div class="site-nav-inner">
 		<div class="container">
 			<header id="masthead" class="site-header" role="banner">
-				<h1 class="site-title display-logo"><a href="#" title="DW Minion" rel="home"><img alt="DW Minion" src="./cj.jpg"></a></h1>
+				<h1 class="site-title display-logo"><a href="#" title="DW Minion" rel="home"><img alt="DW Minion" src={this.state.img}></a></h1>
 				<p class="site-subtitle">仓颉的早年生涯</p>
 				<h2 class="site-description">不卑不亢。
 						</h2> </header>

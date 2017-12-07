@@ -12,6 +12,7 @@ export default class Index extends Page {
   componentWillMount () {
     let me = this
     me.setState({
+      img: window.ENV == 'dev' ? '../../resources/images/cj.jpg' : './dist/images/cj.jpg',
       hash: location.hash
     })
   }
