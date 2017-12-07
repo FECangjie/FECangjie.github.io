@@ -1,6 +1,9 @@
 # 仓颉的博客
 
-<a href="https://FECangjie.github.io" target="_blank">go</a>
+[![仓颉]](https://FECangjie.github.io?_blank)  
+[仓颉]:https://FECangjie.github.io/dist/cj.jpg ""
+
+[博客地址](https://FECangjie.github.io?_blank "go")  
 
 ### 说明
 

@@ -19,7 +19,7 @@
 									<li id="menu-item-192" class='{this.state.hash.indexOf("music")>0?"current_page_item":""}'><a href="#/music">音乐</a></li>
 								</ul>
 							</li>
-							<li id="menu-item-112" class='{this.state.hash.indexOf("gui")>0?"current_page_item":""}'><a href="#/gui">归档</a></li>
+							<li id="menu-item-112" class='{this.state.hash.indexOf("gui")>0?"current_page_item":""}'><a href="https://github.com/FECangjie">github</a></li>
 						</ul>
 					</div>
 				</aside>
