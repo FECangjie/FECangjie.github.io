@@ -6,7 +6,7 @@ const fs = require('fs')
 const path = require('path')
 import Smd from 'summarize-markdown'
 
-const ARTICLE_PATH = path.join(__dirname,'..','article')
+const ARTICLE_PATH = path.join(__dirname, '..', 'article')
 
 const getAllMarkdownFile = function(filePath){
   /*
@@ -71,7 +71,6 @@ const getAllMarkdownFile = function(filePath){
       const filePath = file.replace(ARTICLE_PATH, '')
 
       return Object.assign(obj, {
-        content,
         fileName,
         path: filePath,
         shortContent: `${shortContent}...`

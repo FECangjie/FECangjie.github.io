@@ -18,21 +18,17 @@
  }
 
  function articleToCode(article){
+    const result = []
+    const keys = Object.keys(article)
 
- 	const result = []
- 	const keys = Object.keys(article)
+    keys.forEach((k) =>{
+    	result.push(`"${k}":${JSON.stringify(article[k])}`)
+    })
+    result.push(`"component":()=>System.import('article${article.path}')`)
 
- 	keys.forEach((k) =>{
- 		result.push(`"${k}":${JSON.stringify(article[k])}`)
- 	})
- 	result.push(`"component":()=>System.import('article${article.path}')`)
-
- 	return `
- 	{
- 		${result.join(',')}
-
- 	}`
+    return `\t{\n${result.join(',\n')}\n\t}`
  }
+
  function getFileContent(fileList){
  	let result = []
 
@@ -40,9 +36,7 @@
  		result = fileList.map(articleToCode)
  	}
 
- 	return `
- 	export default [${result.join(',')}]
- 	`
+ 	return `export default [${result.join(',')}]`
  }
  let currentFileConent = ''
 
@@ -50,31 +44,28 @@
      apply(compiler) {
      	function writeData(){
      		const articles = getAllArticle().map(article =>{
-             	// article.component = `System.import('article${article.path}.md')`
-             	return article
-             })
+         	return article
+        })
 
-             const content = getFileContent(articles)
-            //  console.log(content == currentFileConent)
+         const content = getFileContent(articles)
 
-             if(content == currentFileConent){
-             	return
-             }
-             currentFileConent = content
+         if(content == currentFileConent){
+         	return
+         }
+         currentFileConent = content
 
-             fs.writeFileSync(WRITE_FILE_PATH,content,{
-             	charset:'utf-8'
-             })
+         fs.writeFileSync(WRITE_FILE_PATH, content, {
+         	charset:'utf-8'
+         })
      	}
-         compiler.plugin('compilation', function() {
-             writeData()
-         })
-         // writeData()
-         // watch
-         var watcher = chokidar.watch(ARTILE_PATH,{
-         	ignoreInitial:true
-         })
-         watcher.on('add', writeData).on('unlink',writeData)
+
+       compiler.plugin('compilation', function() {
+           writeData()
+       })
+       var watcher = chokidar.watch(ARTILE_PATH,{
+       	ignoreInitial:true
+       })
+       watcher.on('add', writeData).on('unlink',writeData)
      }
  })
 

@@ -1,23 +1,34 @@
 .article {
+  width: 800px;
+  margin-left: 40px;
+  padding-top: 50px;
   .article-header {
     margin-bottom: 30px;
-    padding: 30px 0;
-    background: #b993d6 /* fallback for old browsers */;
-    background: -webkit-linear-gradient(to right, #8ca6db, #b993d6) /* Chrome 10-25, Safari 5.1-6 */;
-    background: linear-gradient(to right, #8ca6db, #b993d6) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    padding: 30px 0 30px 20px;
+    background: #b993d6;
+    background: -webkit-linear-gradient(to right, #8ca6db, #b993d6);
+    background: linear-gradient(to right, #8ca6db, #b993d6);
     color: #fff;
-  }
-  .article-header .header-wrap {
-    width: 1000px;
-    margin: 0 auto;
-  }
-  .article-header .header-wrap .author {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #999;
-    line-height: 24px;
-    font-weight: normal;
-    color: #fff;
+    .header-wrap {
+      margin: 0 auto;
+      h1 {
+        color: #fff;
+      }
+
+      .pub-time {
+        display: inline-block;
+        margin-right: 20px;
+      }
+      .author {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #999;
+        line-height: 24px;
+        font-weight: normal;
+        color: #fff;
+     }
+    }
   }
   .article-header .header-wrap .author span,
   .article-header .header-wrap .pub-time span {

@@ -53,38 +53,29 @@ export default class Article extends Page {
       <LeftMenu></LeftMenu>
       <LeftAction></LeftAction>
       <div id="main" className="site-main article" style={{minHeight: 382}}>
-          <div className="site-main-inner">
-              <div className="container clearfix">
-                  <div id="primary" className="content-area">
-                      <div className="primary-inner">
-                          <div id="content" className="site-content content-list" role="main">
-                          <div className="markdown">
-                          <div className="article-header">
-                            <div className="header-wrap">
-                              <h1>{title}</h1>
-                              <div className="pub-time">
-                                <i className=""></i><span>{createTime}</span>
-                              </div>
-                              <div className="author">
-                                <i className=""></i><span>{author}</span>
-                              </div>
-                              <div className="article-tags">
-                                {
-                                  tags.map(v => <span>{v}</span>)
-                                }
-                              </div>
-                            </div>
-                          </div>
-                          {!!this.state.content ?
-      <AsyncComponent com={this.state.content}/> : <div>文章加载中...</div>}
-      </div>
+      {!!content ?
+        <div className="markdown">
+          <div className="article-header">
+            <div className="header-wrap">
+              <h1>{title}</h1>
+              <div className="pub-time">
+                <i className=""></i><span>{createTime}</span>
+              </div>
+              <div className="author">
+                <i className=""></i><span>作者：{author}</span>
+              </div>
+              <div className="article-tags">
+                {
+                  tags.map(v => <span>{v}</span>)
+                }
+              </div>
+            </div>
+          </div>
+          <AsyncComponent com={content}/>
+        </div>
+       : <div>文章加载中...</div>}
       </div>
   </div>
-</div>
-</div>
-</div>
-</div>
-</div>
     )
   }
 }
