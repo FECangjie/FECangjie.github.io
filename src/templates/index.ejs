@@ -10,11 +10,9 @@
   <link href="<%= htmlWebpackPlugin.files.favicon%>" type="image/x-icon" rel=icon>
   <link href="<%= htmlWebpackPlugin.files.favicon%>" type="image/x-icon" rel="shortcut icon">
   <% } %>
-
   <% if (htmlWebpackPlugin.options.mobile) { %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <% } %>
-
   <% for (var css in htmlWebpackPlugin.files.css) { %>
   <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
   <% } %>

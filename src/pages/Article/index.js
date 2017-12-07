@@ -18,7 +18,7 @@ export default class Article extends Page {
     this.state = {
       title: '',
       content: '',
-      author: '',
+      author: '神秘青年',
       createTime: '',
       tags: []
     }

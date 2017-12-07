@@ -5,7 +5,9 @@
   "scripts": {
     "start": "ENV=dev redskull start --dashboard false",
     "test": "ENV=test redskull build",
-    "build": "ENV=prod redskull build --publicPath https://fecangjie.github.io/dist/ && cp -f ./dist/index.html ./index.html && cp -f ./src/resources/images ./dist/images"
+    "build": "ENV=prod redskull build --publicPath https://fecangjie.github.io/dist/ && npm run cp",
+    "cp": "cp -rf ./dist/index.html ./index.html && cp -rf ./src/resources/images ./dist/images"
+
   },
   "license": "ISC",
   "dependencies": {

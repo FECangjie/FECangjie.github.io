@@ -39,5 +39,12 @@ module.exports = function (webpackConfig, redSkull, webpackPlugins) {
   webpackConfig.resolveLoader.modules.push(path.join(process.cwd(),'webpack/loader'))
   webpackConfig.plugins.push(new SyncMDDataPlugin())
 
+  webpackConfig.output = {
+    filename: 'js/[name].[chunkhash].js',
+    path: path.resolve(__dirname, '../dist/'),
+    publicPath: 'https://fecangjie.github.io/dist/'
+  }
+
+
   return webpackConfig
 }
