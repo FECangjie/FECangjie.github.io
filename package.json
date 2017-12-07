@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@lianjia/zola-core": "0.0.4",
+    "highlight.js": "^9.12.0",
     "react-html-parser": "^1.0.3",
     "showdown": "^1.7.1",
     "summarize-markdown": "^0.3.1"

@@ -10,6 +10,7 @@ import LeftMenu from 'modules/leftMenu'
 import LeftAction from 'modules/leftAction'
 import AsyncComponent from 'modules/AsyncComponent'
 import articleList from 'data/article'
+import highlight from 'highlight.js'
 
 export default class Article extends Page {
 
@@ -41,7 +42,13 @@ export default class Article extends Page {
     });
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    var blocks = Array.from(document.querySelectorAll('pre code'));
+    blocks.forEach(block => highlight.highlightBlock(block));
+  }
+
   render () {
+    console.log(this.state.content)
 
     return (
       <div className="container clearfix">

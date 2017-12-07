@@ -3,7 +3,6 @@
  */
 import { React } from 'zola'
 import showdown from 'showdown'
-import './markdown.styl'
 export default class extends React.Component{
 	constructor(props) {
 	  super(props);

@@ -1,7 +1,7 @@
 
  	export default [
  	{
- 		"title":"translate","shortContent":"揭开React风靡前端开发领域的面纱: [^本文的重点是React受欢迎的原因，而不是与其他框架或库进行比较]: 以下是React如此迅速流行的几个原因： 使用DOM API成本较大。React使开发人员能够使用比真实浏览器更友好的虚拟浏览器。React的虚拟浏览器就像开发者和真实浏览器之间的代理一样。.React允许开发人员声明式地描述UI并给界面状态建模。这意味着开发者只需通过一个最终的状态来...","path":"/fe/yes-react-is-taking-over-front-end-development-the-question-is-why/translate","createTime":"","component":()=>System.import('article/fe/yes-react-is-taking-over-front-end-development-the-question-is-why/translate.md')
+ 		"title":"translate","shortContent":"<hr>\ncreateTime : 2017/07/16\nauthor : Wei Lin\ntitle : DOM总结 subtitle: 总结DOM常用方法及事件模型: DOM总结: BOM: BOM浏览器对象模型（Browser Object Model）BOM对象是在Web中使用JavaScript的核心，该对象提供了与浏览器交互相关对象结构。BOM由多个子对象组成，其核心为window对象...","path":"/fe/yes-react-is-taking-over-front-end-development-the-question-is-why/translate","createTime":"2017/07/16","component":()=>System.import('article/fe/yes-react-is-taking-over-front-end-development-the-question-is-why/translate.md')
 
  	},
  	{
