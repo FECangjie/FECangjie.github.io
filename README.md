@@ -1,9 +1,9 @@
 # 仓颉的博客
 
-[![仓颉]](https://FECangjie.github.io?_blank)  
-[仓颉]:https://FECangjie.github.io/dist/cj.jpg ""
+[![仓颉]](https://FECangjie.github.io)  
+![仓颉](https://FECangjie.github.io/dist/images/cj.jpg "")
 
-[博客地址](https://FECangjie.github.io?_blank "go")  
+[博客地址](https://FECangjie.github.io "go")  
 
 ### 说明
 
