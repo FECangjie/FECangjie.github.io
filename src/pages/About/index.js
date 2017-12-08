@@ -13,14 +13,6 @@ import AsyncComponent from 'modules/AsyncComponent'
 export default class Index extends Page {
 
   render () {
-  	const filePath = this.props.params.splat
-  	const path = `/article/${filePath}.md`
-    let article = {}
-    articles.forEach((item, i) => {
-      if (item.path.indexOf(filePath) > 0) {
-        article = item
-      }
-    })
     return (
       <div className="container clearfix">
       <LeftMenu></LeftMenu>
