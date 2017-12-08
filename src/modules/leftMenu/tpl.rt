@@ -4,7 +4,7 @@
 			<header id="masthead" class="site-header" role="banner">
 				<h1 class="site-title display-logo"><a href="#" title="DW Minion" rel="home"><img alt="DW Minion" src={this.state.img}></a></h1>
 				<p class="site-subtitle">仓颉的早年生涯</p>
-				<h2 class="site-description">不卑不亢。
+				<h2 class="site-description">适者生存。
 						</h2> </header>
 			<div id="main-sidebar" class="widget-area" role="complementary">
 				<aside id="nav_menu-2" class="widget widget_nav_menu">
@@ -19,7 +19,7 @@
 									<li id="menu-item-192" class='{this.state.hash.indexOf("music")>0?"current_page_item":""}'><a href="#/music">音乐</a></li>
 								</ul>
 							</li>
-							<li id="menu-item-112" class='{this.state.hash.indexOf("gui")>0?"current_page_item":""}'><a href="https://github.com/FECangjie">github</a></li>
+							<li id="menu-item-112" class='{this.state.hash.indexOf("gui")>0?"current_page_item":""}'><a href="https://github.com/FECangjie" target="_blank">github</a></li>
 						</ul>
 					</div>
 				</aside>

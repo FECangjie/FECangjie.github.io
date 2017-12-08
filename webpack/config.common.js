@@ -10,5 +10,10 @@ module.exports = function (webpackConfig, redSkull, webpackPlugins) {
     pages: path.join(redSkull.src, 'pages')
   })
 
+  webpackConfig.module.loaders.push({
+    test: /\.rtpl$/,
+    loader: 'rtpl-loader'
+  })
+
   return webpackConfig
 }
