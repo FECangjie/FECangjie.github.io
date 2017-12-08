@@ -1708,7 +1708,7 @@ textarea {
   }
 }
 .site-info {
-  border-top: 5px solid rgba(168,20,4,1);
+  border-top: 5px solid #242424;
   float: left;
   width: 100%;
   padding: 20px 0 40px;
@@ -2062,7 +2062,7 @@ h6 {
 .page-header {
   padding-bottom: 20px;
   margin: 0 0 30px;
-  border-bottom: 5px solid rgba(168,20,4,1);
+  border-bottom: 5px solid #242424;
 }
 .page-header .page-title {
   margin: 0;
@@ -3521,11 +3521,11 @@ input[type="submit"].btn-small {
 }
 .btn-link[disabled]:hover,
 .btn-link[disabled]:focus {
-  color: rgba(65,65,65,1);
+  color: #242424;
   text-decoration: none;
 }
 .site-actions {
-  background: rgba(168,20,4,1);
+  background: #242424;
   position: fixed;
   z-index: 1000;
 }
@@ -3536,7 +3536,7 @@ input[type="submit"].btn-small {
   line-height: 40px;
   display: block;
   color: #444444;
-  background: rgba(168,20,4,1);
+  background: #242424;
   cursor: pointer;
 }
 .csstransitions .site-actions i {
@@ -3546,18 +3546,18 @@ input[type="submit"].btn-small {
   transition: color 0.3s, background-color 0.3s;
 }
 .lt-ie9 .site-actions {
-  border-top: 1px solid rgba(168,20,4,1);
+  border-top: 1px solid #242424;
 }
 .lt-ie9 .site-actions .actions > .action {
-  border-bottom: 1px solid rgba(168,20,4,1);
+  border-bottom: 1px solid #242424;
 }
 @media (min-width: 768px) {
   .site-actions {
-    border-top: 1px solid rgba(168,20,4,1);
+    border-top: 1px solid #242424;
     height: 100%;
   }
   .site-actions .actions > .action {
-    border-bottom: 1px solid rgba(168,20,4,1);
+    border-bottom: 1px solid #242424;
   }
 }
 @media (max-width: 767px) {
@@ -3571,15 +3571,15 @@ input[type="submit"].btn-small {
   }
   .site-actions .actions > .action {
     float: left;
-    border-left: 1px solid rgba(168,20,4,1);
+    border-left: 1px solid #242424;
   }
 }
 .show-site-nav {
-  border-bottom: 1px solid rgba(168,20,4,1);
+  border-bottom: 1px solid #242424;
 }
 .show-site-nav i {
   border-left: none;
-  border-right: 1px solid rgba(168,20,4,1);
+  border-right: 1px solid #242424;
 }
 .show-site-nav i:hover {
   color: #444444;
@@ -3846,7 +3846,7 @@ input[type="submit"].btn-small {
   top: 0;
 }
 .lt-ie9 .social {
-  border-bottom: 1px solid rgba(168,20,4,1);
+  border-bottom: 1px solid #242424;
 }
 @media (min-width: 768px) {
   .site-actions .active-socials {
@@ -3857,7 +3857,7 @@ input[type="submit"].btn-small {
     top: 0;
   }
   .social {
-    border-bottom: 1px solid rgba(168,20,4,1);
+    border-bottom: 1px solid #242424;
   }
 }
 @media (max-width: 767px) {
@@ -3882,7 +3882,7 @@ input[type="submit"].btn-small {
     content: "\f00d";
   }
   .social {
-    border-left: 1px solid rgba(168,20,4,1);
+    border-left: 1px solid #242424;
   }
   .socials.active .list-socials {
     -webkit-transform: translateY(0);
@@ -3908,14 +3908,14 @@ input[type="submit"].btn-small {
 .lt-ie9 .site-actions .actions > .back-top {
   position: fixed;
   bottom: 0;
-  border-top: 1px solid rgba(168,20,4,1);
+  border-top: 1px solid #242424;
   border-bottom: none;
 }
 @media (min-width: 768px) {
   .site-actions .actions > .back-top {
     position: fixed;
     bottom: 0;
-    border-top: 1px solid rgba(168,20,4,1);
+    border-top: 1px solid #242424;
     border-bottom: none;
   }
 }
@@ -4901,7 +4901,7 @@ iframe[id^="oauth2relay"] {
 }
 @media (max-width: 979px) {
   .site-content {
-    border-bottom: 5px solid rgba(168,20,4,1);
+    border-bottom: 5px solid #242424;
   }
   .site-content.content-list {
     border-bottom: none;
@@ -5172,7 +5172,7 @@ iframe[id^="oauth2relay"] {
   line-height: 30px;
   color: #ffffff;
   text-align: center;
-  background: rgba(168,20,4,1);
+  background: #242424;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -5221,12 +5221,12 @@ iframe[id^="oauth2relay"] {
   bottom: 0;
   padding: 15px 90px 15px 15px;
   line-height: 1.5;
-  background: rgba(168,20,4,1);
+  background: #242424;
   background: rgba(255, 255, 255, 0.5);
   color: #000000;
 }
 .comments-area {
-  border-top: 5px solid rgba(168,20,4,1);
+  border-top: 5px solid #242424;
 }
 .comments-title {
   font-size: 12px;
@@ -5680,7 +5680,7 @@ iframe[id^="oauth2relay"] {
   filter: alpha(opacity=30);
 }
 .page-links > span.btn:hover {
-  background: rgba(168,20,4,1);
+  background: #242424;
 }
 .site-info {
   font-size: 12px;
