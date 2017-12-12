@@ -18,21 +18,21 @@ export default class Index extends Page {
       <LeftMenu></LeftMenu>
       <LeftAction></LeftAction>
       <div id="main" className="site-main" style={{minHeight: 382}}>
-          <div className="site-main-inner">
-              <div className="container clearfix">
-                  <div id="primary" className="content-area">
-                      <div className="primary-inner">
-                          <div id="content" className="site-content content-list" role="main">
-                          我并不渴求那些超人类的天赋<br/>
-                          那种超级英雄<br/>
-                          那些童话般的天赐之福 <br/>
-                          只想做到一些我力所能及的事情<br/>
+        <div className="site-main-inner">
+          <div className="container clearfix">
+            <div id="primary" className="content-area">
+              <div className="primary-inner">
+                <div id="content" className="site-content content-list" role="main">
+                我并不渴求那些超人类的天赋<br/>
+                那种超级英雄<br/>
+                那些童话般的天赐之福 <br/>
+                只想做到一些我力所能及的事情<br/>
+              </div>
+          </div>
+        </div>
       </div>
+    </div>
   </div>
-</div>
-</div>
-</div>
-</div>
 </div>
     )
   }
