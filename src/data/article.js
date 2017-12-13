@@ -1,4 +1,13 @@
 export default [	{
+"createTime":"2017/12/13",
+"author":"7nxo",
+"title":"Javascript 中的神器——Promise",
+"subtitle":"Promise",
+"fileName":"Javascript 中的神器——Promise",
+"path":"/fe/Javascript 中的神器——Promise.md",
+"shortContent":"Javascript 中的神器——Promise: <hr>\nPromise in js: \"回调函数真正的问题在于他剥夺了我们使用 return 和 throw 这些关键字的能力。而 Promise 很好地解决了这一切。\" 正如您在阅读的这份文档，它使用简单的符号标识不同的标题，将某些文字标记为粗体或者斜体，创建一个链接或一个脚注[^demo]。下面列举了几个高级功能，更多语法请按Ctrl + ...",
+"component":()=>System.import('article/fe/Javascript 中的神器——Promise.md')
+	},	{
 "createTime":"2017/07/16",
 "author":"7nxo",
 "title":"DOM总结",

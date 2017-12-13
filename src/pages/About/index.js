@@ -27,6 +27,9 @@ export default class Index extends Page {
                 那种超级英雄<br/>
                 那些童话般的天赐之福 <br/>
                 只想做到一些我力所能及的事情<br/>
+
+                下期预告：<br/>
+                eslint语法规范、<br/>
               </div>
           </div>
         </div>
