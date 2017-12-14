@@ -6,9 +6,6 @@ subtitle: Promise
 ---
 
 # Javascript 中的神器——Promise
--------------------
-
-## Promise in js
 
 > 回调函数真正的问题在于他剥夺了我们使用 return 和 throw 这些关键字的能力。而 Promise 很好地解决了这一切。
 

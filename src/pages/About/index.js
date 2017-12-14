@@ -30,6 +30,8 @@ export default class Index extends Page {
 
                 下期预告：<br/>
                 eslint语法规范、<br/>
+                commonJS规范、<br/>
+                小程序开发、<br/>
               </div>
           </div>
         </div>
