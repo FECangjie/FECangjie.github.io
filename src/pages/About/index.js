@@ -29,9 +29,12 @@ export default class Index extends Page {
                 只想做到一些我力所能及的事情<br/>
 
                 下期预告：<br/>
-                eslint语法规范、<br/>
+                immutable js、<br/>
                 commonJS规范、<br/>
                 小程序开发、<br/>
+                react高阶组件、<br/>
+                react diff算法、<br/>
+                rudex 中间件、<br/>
               </div>
           </div>
         </div>
