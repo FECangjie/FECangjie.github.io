@@ -31,10 +31,10 @@ export default class Index extends Page {
                 下期预告：<br/>
                 immutable js、<br/>
                 commonJS规范、<br/>
-                小程序开发、<br/>
                 react高阶组件、<br/>
                 react diff算法、<br/>
                 rudex 中间件、<br/>
+                PWA渐进式初体验、<br/>
               </div>
           </div>
         </div>
