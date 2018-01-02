@@ -29,6 +29,7 @@ export default class Index extends Page {
                 只想做到一些我力所能及的事情<br/>
 
                 下期预告：<br/>
+                js基础、<br/>
                 immutable js、<br/>
                 commonJS规范、<br/>
                 react高阶组件、<br/>
