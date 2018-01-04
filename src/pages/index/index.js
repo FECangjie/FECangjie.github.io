@@ -68,7 +68,7 @@ export default class Index extends Page {
       <div className="container clearfix">
       <LeftMenu></LeftMenu>
       <LeftAction></LeftAction>
-      <div className="article-list" style={{minHeight: PAGE_NUM82}}>
+      <div className="article-list" style={{minHeight: 382}}>
           <div className="content" role="main">
           {
 		      	articles.map((article,index) =>{
