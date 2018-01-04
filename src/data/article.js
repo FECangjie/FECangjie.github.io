@@ -50,7 +50,7 @@ export default [	{
 "subtitle":"巩固根基",
 "fileName":"小记：实现bind",
 "path":"/fe/小记：实现bind.md",
-"shortContent":"详解call，apply 和 bind: \"之前看了点es6的箭头函数，为了搞懂箭头函数的this，看了很多文章，也顺便看了几个绑定函数，发现很多以前没注意的问题，收获不少。\n之前就在网上的笔试题中看过用js实现bind()函数，没怎么在意，以为既然都是用来进行上下文绑定的，用call或者apply应该就能实现。现在看，我还是图样图森破。\" 先来讲一下call()和apply()吧，对于这两个函数...",
+"shortContent":"详解call，apply 和 bind: \"之前看了点es6的箭头函数，为了搞懂箭头函数的this，看了很多文章，也顺便看了几个绑定函数，发现很多以前没注意的问题，收获不少。\" call()和apply()就是改变函数的执行上下文，也就是this值。他们两个是Function对象的方法，每个函数都能调用。他们的第一个参数就是你要指定的执行上下文，第二个用来传递参数(说第二个不准确，应该说第二部分，...",
 "component":()=>System.import('article/fe/小记：实现bind.md')
 	},	{
 "createTime":"2017/11/19",
