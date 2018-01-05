@@ -17,6 +17,15 @@ export default [	{
 "shortContent":"欢迎使用马克飞象: @(示例笔记本)[马克飞象|帮助|Markdown] 马克飞象是一款专为印象笔记（Evernote）打造的Markdown编辑器，通过精心的设计与技术实现，配合印象笔记强大的存储和同步功能，带来前所未有的书写体验。特点概述： 功能丰富 ：支持高亮代码块、LaTeX 公式、流程图，本地图片以及附件上传，甚至截图粘贴，工作学习好帮手；.得心应手 ：简洁高效的编辑器，提供桌面客户端以...",
 "component":()=>System.import('article/freestyle/马克飞象.md')
 	},	{
+"createTime":"2017/11/19",
+"author":"7nxo",
+"title":"decorator",
+"subtitle":"decorator装饰器",
+"fileName":"js装饰器",
+"path":"/fe/js装饰器.md",
+"shortContent":"#decorator js的decorator是借鉴的pythod的decorator的思想。主要作用是给一个已有的方法或类扩展一些新的行为，而不是去直接修改它本身。 想象一下用过的decorator， css-modules，antd的form校验，redux的connect也可以写成decorator方式 在 ES6 之前，装饰器对于 JS 来说确实显得不太重要，你只是需要加几层 wrappe...",
+"component":()=>System.import('article/fe/js装饰器.md')
+	},	{
 "createTime":"2017/12/22",
 "author":"7nxo",
 "title":"React 高阶组件",
@@ -41,7 +50,7 @@ export default [	{
 "subtitle":"javascript for循环从入门到偏门(效率优化+奇特用法)",
 "fileName":"你不知道的for循环深度优化",
 "path":"/fe/你不知道的for循环深度优化.md",
-"shortContent":"javascript for循环从入门到偏门(效率优化+奇特用法): \"for循环是非常基础的javascript知识，但由于JS太灵活了，所以可能出现一些让初学者崩溃的写法。我决定由浅入深的研究一下for循环。\" 首先，for循环的写法就略过吧。。。。 条件写在循环条件里。.缓存变量。.倒序法。（少用一个变量。。- - 这也可以）....",
+"shortContent":"javascript for循环从入门到偏门(效率优化+奇特用法): \"for循环是非常基础的javascript知识，但由于JS太灵活了，所以可能出现一些让初学者崩溃的写法。我决定由浅入深的研究一下for循环。\" 首先，for循环的写法就略过吧。。。。\n以下测试为在chrome中测试。 我们以一个常规写法为例子 539s 条件写在循环条件里。（优化有奇效）.56s 缓存变量。（不太稳定，和arr...",
 "component":()=>System.import('article/fe/你不知道的for循环深度优化.md')
 	},	{
 "createTime":"2017/12/14",
@@ -53,14 +62,14 @@ export default [	{
 "shortContent":"初识微信小程序: \"官网文档 https://mp.weixin.qq.com/debug/wxadoc/dev/\"...",
 "component":()=>System.import('article/fe/初识微信小程序.md')
 	},	{
-"createTime":"2017/11/19",
+"createTime":"2018/01/03",
 "author":"7nxo",
-"title":"decorator",
-"subtitle":"decorator装饰器",
-"fileName":"js装饰器",
-"path":"/fe/js装饰器.md",
-"shortContent":"#decorator js的decorator是借鉴的pythod的decorator的思想。主要作用是给一个已有的方法或类扩展一些新的行为，而不是去直接修改它本身。 想象一下用过的decorator， css-modules，antd的form校验，redux的connect也可以写成decorator方式 在 ES6 之前，装饰器对于 JS 来说确实显得不太重要，你只是需要加几层 wrappe...",
-"component":()=>System.import('article/fe/js装饰器.md')
+"title":"css 回流与重绘",
+"subtitle":"回流与重绘",
+"fileName":"css 回流与重绘",
+"path":"/fe/css 回流与重绘.md",
+"shortContent":"回流与重绘: 当render tree中的一部分(或全部)因为元素的规模尺寸，布局，隐藏等改变而需要重新构建。这就称为回流(reflow)。每个页面至少需要一次回流，就是在页面第一次加载的时候。在回流的时候，浏览器会使渲染树中受到影响的部分失效，并重新构造这部分渲染树，完成回流后，浏览器会重新绘制受影响的部分到屏幕中，该过程成为重绘。. 当render tree中的一些元素需要更新属性，而这些属性...",
+"component":()=>System.import('article/fe/css 回流与重绘.md')
 	},	{
 "createTime":"2017/12/28",
 "author":"7nxo",
@@ -88,6 +97,15 @@ export default [	{
 "path":"/freestyle/react生命周期复习.md",
 "shortContent":"【译】React生命周期方法总结——使用方式和时机: \"原文地址：https://engineering.musefind.com/react-lifecycle-methods-how-and-when-to-use-them-2111a1b692b1\" React组件的生命周期，从挂载（pre-mounting）到卸载（unmounting）。 React之美在于把复杂的UI分解为一个个很小的...",
 "component":()=>System.import('article/freestyle/react生命周期复习.md')
+	},	{
+"createTime":"2018/01/03",
+"author":"7nxo",
+"title":"",
+"subtitle":"",
+"fileName":"文档模版",
+"path":"/freestyle/文档模版.md",
+"shortContent":"...",
+"component":()=>System.import('article/freestyle/文档模版.md')
 	},	{
 "createTime":"2017/07/17",
 "author":"7nxo",
