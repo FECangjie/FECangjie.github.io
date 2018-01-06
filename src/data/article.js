@@ -1,12 +1,12 @@
 export default [	{
-"createTime":"2018/01/05",
+"createTime":"2017/12/13",
 "author":"7nxo",
-"title":"JSONP 原理",
-"subtitle":"JSONP 原理",
-"fileName":"JSONP 原理",
-"path":"/fe/JSONP 原理.md",
-"shortContent":"JSONP 原理: 写个API调用吧。。。...",
-"component":()=>System.import('article/fe/JSONP 原理.md')
+"title":"Javascript 中的神器——Promise",
+"subtitle":"Promise",
+"fileName":"Javascript 中的神器——Promise",
+"path":"/fe/Javascript 中的神器——Promise.md",
+"shortContent":"Javascript 中的神器——Promise: \"回调函数真正的问题在于他剥夺了我们使用 return 和 throw 这些关键字的能力。而 Promise 很好地解决了这一切。\" 正如您在阅读的这份文档，它使用简单的符号标识不同的标题，将某些文字标记为粗体或者斜体，创建一个链接或一个脚注[^demo]。下面列举了几个高级功能，更多语法请按Ctrl + /查看帮助。 概念: ES6 原生提供了...",
+"component":()=>System.import('article/fe/Javascript 中的神器——Promise.md')
 	},	{
 "createTime":"2017/12/01",
 "author":"7nxo",
@@ -16,15 +16,6 @@ export default [	{
 "path":"/freestyle/马克飞象.md",
 "shortContent":"欢迎使用马克飞象: @(示例笔记本)[马克飞象|帮助|Markdown] 马克飞象是一款专为印象笔记（Evernote）打造的Markdown编辑器，通过精心的设计与技术实现，配合印象笔记强大的存储和同步功能，带来前所未有的书写体验。特点概述： 功能丰富 ：支持高亮代码块、LaTeX 公式、流程图，本地图片以及附件上传，甚至截图粘贴，工作学习好帮手；.得心应手 ：简洁高效的编辑器，提供桌面客户端以...",
 "component":()=>System.import('article/freestyle/马克飞象.md')
-	},	{
-"createTime":"2018/01/03",
-"author":"7nxo",
-"title":"css 回流与重绘",
-"subtitle":"回流与重绘",
-"fileName":"css 回流与重绘",
-"path":"/fe/css 回流与重绘.md",
-"shortContent":"回流与重绘: 当render tree中的一部分(或全部)因为元素的规模尺寸，布局，隐藏等改变而需要重新构建。这就称为回流(reflow)。每个页面至少需要一次回流，就是在页面第一次加载的时候。在回流的时候，浏览器会使渲染树中受到影响的部分失效，并重新构造这部分渲染树，完成回流后，浏览器会重新绘制受影响的部分到屏幕中，该过程成为重绘。. 当render tree中的一些元素需要更新属性，而这些属性...",
-"component":()=>System.import('article/fe/css 回流与重绘.md')
 	},	{
 "createTime":"2017/11/19",
 "author":"7nxo",
@@ -62,6 +53,15 @@ export default [	{
 "shortContent":"javascript for循环从入门到偏门(效率优化+奇特用法): \"for循环是非常基础的javascript知识，但由于JS太灵活了，所以可能出现一些让初学者崩溃的写法。我决定由浅入深的研究一下for循环。\" 首先，for循环的写法就略过吧。。。。\n以下测试为在chrome中测试。 我们以一个常规写法为例子 539s 条件写在循环条件里。（优化有奇效）.56s 缓存变量。（不太稳定，和arr...",
 "component":()=>System.import('article/fe/你不知道的for循环深度优化.md')
 	},	{
+"createTime":"2018/01/05",
+"author":"7nxo",
+"title":"写点和平与爱吧",
+"subtitle":"随便写点东西",
+"fileName":"写点和平与爱吧",
+"path":"/fe/写点和平与爱吧.md",
+"shortContent":"随笔: JSONP 原理: 写个API调用吧。。。 正则替换es6字符串模版: 写个正则吧。。。 匹配所有<%= xxx %> 变成 {{ xxx }}...",
+"component":()=>System.import('article/fe/写点和平与爱吧.md')
+	},	{
 "createTime":"2017/12/14",
 "author":"7nxo",
 "title":"初识微信小程序",
@@ -71,14 +71,14 @@ export default [	{
 "shortContent":"初识微信小程序: \"官网文档 https://mp.weixin.qq.com/debug/wxadoc/dev/\"...",
 "component":()=>System.import('article/fe/初识微信小程序.md')
 	},	{
-"createTime":"2017/12/13",
+"createTime":"2018/01/03",
 "author":"7nxo",
-"title":"Javascript 中的神器——Promise",
-"subtitle":"Promise",
-"fileName":"Javascript 中的神器——Promise",
-"path":"/fe/Javascript 中的神器——Promise.md",
-"shortContent":"Javascript 中的神器——Promise: \"回调函数真正的问题在于他剥夺了我们使用 return 和 throw 这些关键字的能力。而 Promise 很好地解决了这一切。\" 正如您在阅读的这份文档，它使用简单的符号标识不同的标题，将某些文字标记为粗体或者斜体，创建一个链接或一个脚注[^demo]。下面列举了几个高级功能，更多语法请按Ctrl + /查看帮助。 概念: ES6 原生提供了...",
-"component":()=>System.import('article/fe/Javascript 中的神器——Promise.md')
+"title":"css 回流与重绘",
+"subtitle":"回流与重绘",
+"fileName":"css 回流与重绘",
+"path":"/fe/css 回流与重绘.md",
+"shortContent":"回流与重绘: 当render tree中的一部分(或全部)因为元素的规模尺寸，布局，隐藏等改变而需要重新构建。这就称为回流(reflow)。每个页面至少需要一次回流，就是在页面第一次加载的时候。在回流的时候，浏览器会使渲染树中受到影响的部分失效，并重新构造这部分渲染树，完成回流后，浏览器会重新绘制受影响的部分到屏幕中，该过程成为重绘。. 当render tree中的一些元素需要更新属性，而这些属性...",
+"component":()=>System.import('article/fe/css 回流与重绘.md')
 	},	{
 "createTime":"2017/12/28",
 "author":"7nxo",
