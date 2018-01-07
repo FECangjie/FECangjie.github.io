@@ -59,7 +59,7 @@ export default [	{
 "subtitle":"随便写点东西",
 "fileName":"写点和平与爱吧",
 "path":"/fe/写点和平与爱吧.md",
-"shortContent":"随笔: JSONP 原理: 写个API调用吧。。。 正则替换es6字符串模版: 写个正则吧。。。 匹配所有<%= xxx %> 变成 {{ xxx }}...",
+"shortContent":"随笔: JSONP 原理: 写个API调用吧。。。 正则替换es6字符串模版: 写个正则吧。。。 匹配所有<%= xxx %> 变成 {{ xxx }} once 函数 闭包: 只运行一次todo的函数...",
 "component":()=>System.import('article/fe/写点和平与爱吧.md')
 	},	{
 "createTime":"2017/12/14",
