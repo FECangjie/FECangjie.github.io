@@ -81,7 +81,7 @@ const getAllMarkdownFile = function(filePath){
     * 按照时间从大到小排序
     */
     result.sort((a1, a2) => {
-     return a1.createTime > a2.createTime ? 1 : -1
+     return a1.createTime < a2.createTime ? 1 : -1
     })
    return result
 }
